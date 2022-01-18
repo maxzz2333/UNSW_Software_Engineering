@@ -1,0 +1,218 @@
+/***********通用样式************/
+body{
+    font-size: 13px;
+    font-family: Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+    color: #000;
+}
+
+/***********引入字体图标************/
+@font-face {
+    font-family: icomoon;
+    src: url('../fonts/icomoon/fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon/fonts/icomoon.svg') format('svg'),
+    url('../fonts/icomoon/fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon/fonts/icomoon.woff') format('woff');
+}
+
+[class^="icon-"],
+[class*=" icon-"]{
+    font-family: icomoon;
+    font-style: normal;
+}
+/***********通用样式************/
+
+/***********头部样式************/
+
+/***********上部样式************/
+#my_header .top-bar{
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#my_header .top-bar .container .row>div+div{
+    border-left: 1px solid #e0e0e0;
+}
+
+
+/*开启定位，隐藏二维码*/
+#my_header .top-bar .container .row .top-bar-1 a {
+    position: relative;
+}
+
+#my_header .top-bar .container .row .top-bar-1 a img{
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -10px;
+    z-index: 9999;
+}
+
+#my_header .top-bar .container .row .top-bar-1 a:hover img{
+    display: block;
+}
+
+#my_header .top-bar .container .row .top-bar-2 i{
+    margin-left: 40px;
+}
+
+#my_header .top-bar .container .row .top-bar-4 a{
+ margin-left: 10px;
+}
+
+
+.icon-phone ::before{
+    content: "\e958";
+    font-size: 13px;
+}
+
+.icon-tel ::before{
+    content: "\e942";
+    font-size: 13px;
+}
+
+.icon-email::before{
+    content: "\e945";
+    font-size: 13px;
+}
+
+/***********下部导航样式************/
+#my_header .navbar-my{
+   background-color: #fff;
+   margin-bottom: 0;
+}
+
+#my_header .navbar-my .navbar-brand{
+   height: 70px;
+   padding: 15px 15px;
+}
+
+#my_header .navbar-my .navbar-nav a{
+    height: 70px;
+    line-height: 40px;
+ }
+
+ #my_header .navbar-my .navbar-nav li.active a,
+ #my_header .navbar-my .navbar-nav li a:hover
+ {
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+ }
+
+ #my_header .navbar-my .navbar-toggle {
+    margin-top: 18px;
+ }
+/***********头部样式************/
+
+/***********轮播图样式************/
+#my_carousel{
+    height: 320px;
+    overflow: hidden;
+}
+
+/***********轮播图样式************/
+
+/***********关于我样式************/
+#my_about{
+    padding: 20px 0;
+}
+
+/***********关于我样式************/
+
+/***********我的项目样式************/
+#my_project {
+    background-color: #f0f0f0;
+    padding: 30px 0;
+}
+
+#my_project .nav{
+    font-size: 15px;
+}
+
+#my_project .nav a{
+    color: #999;
+}
+
+#my_project .nav a li.active{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+#my_project .tab-content{
+    padding-top: 20px;
+}
+
+
+#p2{
+    background-color: transparent;
+}
+
+/***********我的项目样式************/
+
+/***********我的课程样式************/
+#my_course .course{
+    padding: 15px 10px;
+}
+
+
+#my_course .course .media-body{
+    vertical-align: middle;
+}
+/***********我的课程样式************/
+
+/***********链接样式************/
+#my_link .logos{
+    list-style: none;
+}
+
+#my_link .logos li{
+    display: inline-block;
+    width: 24%;
+    padding: 80px;
+}
+#my_link .logo{
+    width: 100px;
+}
+/***********链接样式样式************/
+
+/***********尾部样式样式************/
+#my_footer{
+    background-color: #f0f0f060;
+}
+
+#my_footer ul{
+    list-style: none;
+}
+
+
+#my_footer .one,#my_footer .two{
+    padding: 10px;
+    border-right: 1px solid #666;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#my_footer .one li{
+    line-height: 40px;
+}
+
+#my_footer .one li a{
+    color: #000;
+}
+
+
+#my_footer .three{
+    padding: 10px 50px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/***********尾部样式样式************/

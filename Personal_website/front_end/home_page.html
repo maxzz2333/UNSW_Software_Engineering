@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--设置当前HTML文件的字符编码-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--compatible兼容的，设置浏览器的兼容模式版本（让IE使用最新的渲染引擎工作）-->
+		
+		<!--声明当前网页在移动端浏览器展示的相关设置-->
+		<!-- 
+			viewport表示用户是否可以缩放页面
+			width指定视区的逻辑宽度
+			device-width指定视区宽度应为设备的屏幕宽度
+			initial-scale指令用于设置Web页面的初始化缩放比例
+			initial-scale-1则将显示未经缩放的Web文档
+		 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>个人网站</title>
+		<!--引入Bootstrap核心样式表(CSS)文件-->
+		<link  rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+		<!--引入Bootstrap默认主题样式(CSS)文件-->
+		<link  rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css"/>
+		<!--自定义样式表(CSS)文件-->
+		<link  rel="stylesheet" href="css/home_page.css"/>
+		<!--站点图标-->
+		<link  rel="shortcut icon" href="img/UNSW-Square.png" type="image/x-icon">
+		
+		
+	</head>
+	<body>
+		<!--jquery-->
+		<script src="js/jquery-3.4.1.js" ></script>
+		<!--bootstrap js插件-->
+		<script src="bootstrap/js/bootstrap.min.js" ></script>
+		<!--自定义脚本文件-->
+		<script src="js/home_page.js" ></script>
+		
+		<!--HTML结构-->
+
+		<!--头部容器-->
+		<header id="my_header">
+			<!--上部通栏-->
+			<div class="top-bar hidden-sm hidden-xs text-center text-muted"><!-- .hidden-xs根据视口大小选择是否隐藏 -->
+				<div class="container">
+					<div class="row">
+						<div class="top-bar-1 col-md-2">
+							<a href="">
+								<i class="icon-phone"><span>关注微信号</span></i>
+								<span class="caret"></span>
+								<img src="img/wechat.jpg" alt="微信二维码" width="200px">
+							</a>
+						</div>
+						<div class="top-bar-2 col-md-6">
+							<i class="icon-tel">
+								<span>电话：18782248021</span>
+							</i>
+
+							<i class="icon-email">
+								<span>邮箱：18782248021@163.com</span>
+							</i>
+						</div>
+						<div class="top-bar-3 col-md-2">
+							<a href="">校企合作</a>
+							<a href="">培训师</a>
+						</div>
+						<div class="top-bar-4 col-md-2">
+							<a class="btn btn-primary " href="#" role="button">注册</a>
+							<a class="btn btn-default " href="#" role="button">登录</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--下部导航-->
+			<nav class="navbar navbar-default navbar-static-top navbar-my">
+				<div class="container">
+				  <!-- Brand and toggle get grouped for better mobile display -->
+				  <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my_nav" aria-expanded="false">
+					  <span class="sr-only">Toggle navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img src="img/unsw-logo.png" alt="image/x-icon" width="100">
+					</a>
+				  </div>
+			  
+				  <!-- Collect the nav links, forms, and other content for toggling -->
+				  <div class="collapse navbar-collapse" id="my_nav">
+					<ul class="nav navbar-nav">
+					  <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+					  <li><a href="#">关于我</a></li>
+					  <li><a href="#">MY项目</a></li>
+					  <li><a href="#">MY技术栈</a></li>
+					  <li><a href="#">项目经历</a></li>
+					  <li><a href="#">联系我</a></li>
+					  <li><a href="#">Demo</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+					  <li><a href="#">个人中心</a></li>
+					</ul>
+				  </div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			  </nav>
+		</header>
+		<!--/头部容器-->
+
+		<!--轮播图容器-->
+		<section id="my_carousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#my_carousel" data-slide-to="1"></li>
+				<li data-target="#my_carousel" data-slide-to="2"></li>
+			</ol>
+			
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+				<img src="img/pexels-sascha-thiele-747016.jpg" alt="...">  
+				</div>
+				<div class="item">
+				<img src="img/pexels-tyler-lastovich-610744.jpg" alt="...">
+				</div>
+				<div class="item">
+				<img src="img/pexels-matheus-guimarães-611328.jpg" alt="...">
+				</div>
+			</div>
+			
+			<!-- Controls -->
+			<a class="left carousel-control" href="#my_carousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#my_carousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+			
+		</section>
+		<!--/轮播图容器-->
+
+		<!--关于我容器-->
+		<section id="my_about" class="hidden-sm hidden-xs">
+			<!-- 标题 -->
+			<div class="title text-center text-muted">
+				<h1>关于我</h1>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<h2>教育经历</h2>
+						<p>新南威尔士大学（QS 排名 43）
+							计算机科学 本科 计算机科学与工程学院</p>
+						<h2>相关课程</h2>
+						<p>软件工程基础、数据库系统、网站系统、 数据结构和算法、交互设计、计算机网络和应用、计算机系统</p>
+						<h2>工作经历</h2>
+						<p>汉莎航空技术有限公司 航空飞控系统技术员
+							负责飞控系统部件的进场检测、协助制定维修方案、填写维修记录、维修、性能测试、出场检测。</p>
+					</div>
+					<div class="col-md-4">
+						<img src="img/20182281831137928088.jpg" alt="logo" class="img-rounded img-responsive">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/关于我容器-->
+
+		<!--我的项目容器-->
+		<div class="title text-center text-muted">
+			<h1>MY项目</h1>
+		</div>
+		<section id="my_project">
+			<div class="container">
+				<div class="row">
+					<div>
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+						  <li role="presentation" class="active"><a href="#Web" aria-controls="home" role="tab" data-toggle="tab">Web前端</a></li>
+						  <li role="presentation"><a href="#Python" aria-controls="profile" role="tab" data-toggle="tab">Python</a></li>
+						  <li role="presentation"><a href="#Java" aria-controls="messages" role="tab" data-toggle="tab">Java</a></li>
+						  <li role="presentation"><a href="#C" aria-controls="settings" role="tab" data-toggle="tab">C#</a></li>
+						  <li class="pull-right hidden-sm hidden-xs"><a href="" aria-controls="settings" role="tab" data-toggle="tab">More</a></li>
+						</ul>
+					  
+						<!-- Tab panes -->
+						<div class="tab-content">
+						  <div role="tabpanel" class="tab-pane fade in active" id="Web">
+							  <div class="container">
+								  <div class="row">
+									  <div class="col-md-8">
+										  <!-- 第一部分 -->
+										  <div  id="p1" class="media">
+											<div class="media-left">
+											  <a href="#">
+												<img class="media-object" src="img/web2.png" alt="web">
+											  </a>
+											</div>
+											<div class="media-body" style="padding-top: 80px;">
+											  <h4 class="media-heading">Front End Web Development</h4>
+											</div>
+										  </div>
+										  <!-- 第二部分 -->
+										  <ol id="p2" class="breadcrumb lead">
+											<li><a href="#">HTM5</a></li>
+											<li><a href="#">CSS3</a></li>
+											<li><a href="#">Jquery</a></li>
+											<li><a href="#">Vue JS</a></li>
+											<li><a href="#">React JS</a></li>
+										  </ol>
+										  
+									  </div>
+									  <div class="col-md-4 hidden-sm hidden-xs">
+										  <img src="img/Foundations-of-Front-End-Web-Development.jpg" alt="" class="img-responsive">
+									  </div>
+								  </div>
+							  </div>
+						  </div>
+						  <div role="tabpanel" class="tab-pane fade" id="Python">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-8">
+										<img src="img/443e356bcd15754dc2f877c572302578.png" alt="" class="img-responsive">
+									</div>
+									<div class="col-md-4 hidden-sm hidden-xs">
+										<img src="img/1_Q5EUk28Xc3iCDoMSkrd1_w.png" alt="" class="img-responsive">
+									</div>
+								</div>
+						  	</div>
+						  </div>
+						  <div role="tabpanel" class="tab-pane fade" id="Java">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-8">
+										<img src="img/443e356bcd15754dc2f877c572302578.png" alt="" class="img-responsive">
+									</div>
+									<div class="col-md-4 hidden-sm hidden-xs">
+										<img src="img/1_Q5EUk28Xc3iCDoMSkrd1_w.png" alt="" class="img-responsive">
+									</div>
+								</div>
+							</div>
+						  </div>
+						  <div role="tabpanel" class="tab-pane fade" id="C">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-8">
+										<img src="img/443e356bcd15754dc2f877c572302578.png" alt="" class="img-responsive">
+									</div>
+									<div class="col-md-4 hidden-sm hidden-xs">
+										<img src="img/1_Q5EUk28Xc3iCDoMSkrd1_w.png" alt="" class="img-responsive">
+									</div>
+								</div>
+							</div>
+						  </div>
+						</div>
+					  
+					  </div>
+				</div>
+			</div>
+		</section>
+		<!--/我的项目容器-->
+
+		<!--我的课程-->
+		<section id="my_course">
+			<div class="title text-center text-muted">
+				<h1>MY课程</h1>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 course">
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object .img-responsive img-circle img-thumbnail" src="img/UNSW-Square.png" alt="..." style="width:100px">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">软件工程基础</h4>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object .img-responsive img-circle img-thumbnail" src="img/UNSW-Square.png" alt="..." style="width:100px">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">数据库系统</h4>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object .img-responsive img-circle img-thumbnail" src="img/UNSW-Square.png" alt="..." style="width:100px">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">Web前端</h4>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object .img-responsive img-circle img-thumbnail" src="img/UNSW-Square.png" alt="..." style="width:100px">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">数据结构和算法</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 course">
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object .img-responsive img-circle img-thumbnail" src="img/UNSW-Square.png" alt="..." style="width:100px">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">交互设计</h4>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object .img-responsive img-circle img-thumbnail" src="img/UNSW-Square.png" alt="..." style="width:100px">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">计算机网络和应用</h4>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object .img-responsive img-circle img-thumbnail" src="img/UNSW-Square.png" alt="..." style="width:100px">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">计算机系统</h4>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object .img-responsive img-circle img-thumbnail" src="img/UNSW-Square.png" alt="..." style="width:100px">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">线性代数</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 course">
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object .img-responsive img-circle img-thumbnail" src="img/UNSW-Square.png" alt="..." style="width:100px">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">数字营销和网站分析</h4>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object .img-responsive img-circle img-thumbnail" src="img/UNSW-Square.png" alt="..." style="width:100px">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">数据库设计</h4>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object .img-responsive img-circle img-thumbnail" src="img/UNSW-Square.png" alt="..." style="width:100px">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">面向对象编程设计</h4>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object .img-responsive img-circle img-thumbnail" src="img/UNSW-Square.png" alt="..." style="width:100px">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">微服务</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/我的课程容器-->
+		
+		<!--友情链接容器-->
+		<section id="my_link">
+			<div class="container">
+				<div class="title text-center text-muted">
+					<h1>技术官网</h1>
+				</div>
+				<ul class="logos">
+					<li><a href=""><img src="img/GitHub-Logo.png" alt="" class="logo"></a></li>
+					<li><a href=""><img src="img/Python-Symbol.png" alt="" class="logo"></a></li>
+					<li><a href=""><img src="img/java-logo-vector.png" alt="" class="logo"></a></li>
+					<li><a href=""><img src="img/download.png" alt="" class="logo"></a></li>
+				</ul>
+			</div>
+			
+		</section>
+		<!--/友情链接容器-->
+
+		<!--底部信息容器-->
+		<footer id="my_footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-md-offset-1 one">
+						<div class="row">
+							<ul class="col-md-6">
+								<li><a href="">关于我</a></li>
+								<li><a href="">我的项目</a></li>
+							</ul>
+							<ul class="col-md-6">
+								<li><a href="">我的课程</a></li>
+								<li><a href="">联系我</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 two">
+						<h5>联系电话：18782248021</h5>
+						<h5>联系邮箱：18782248021@163.com</h5>
+					</div>
+					<div class="col-md-3 three">
+						<h5>联系我：</h5>
+						<a href="">
+							<img src="img/wechat2.png" alt="" width="50">
+							<img src="img/qq.png" alt="" width="80">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/底部信息容器-->
+		<!--/HTML结构-->
+		
+		
+		
+	</body>
+</html>
